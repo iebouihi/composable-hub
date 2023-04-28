@@ -1,0 +1,25 @@
+{
+    "namespace": "com.sqli.composablehub.sap.models",
+    "type": "record",
+    "name": "ProductRaw",
+    "fields": [
+        {
+            "type": "string",
+            "name": "code"
+        },
+        {
+            "type": [
+                "string",
+                "null"
+            ],
+            "name": "name"
+        },
+        {
+            "type": [
+                "string",
+                "null"
+            ],
+            "name": "catalogVersion"
+        }
+    ]
+}
