@@ -1,0 +1,25 @@
+{
+    "namespace": "com.sqli.composablehub.algolia.models",
+    "type": "record",
+    "name": "ArticleTarget",
+    "fields": [
+        {
+            "type": "string",
+            "name": "articleNumber"
+        },
+        {
+            "type": [
+                "string",
+                "null"
+            ],
+            "name": "description"
+        },
+        {
+            "type": [
+                "string",
+                "null"
+            ],
+            "name": "collection"
+        }
+    ]
+}
