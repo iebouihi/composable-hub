@@ -1,0 +1,33 @@
+{
+    "code": "Test_code",
+    "catalogVersion": {
+      "catalog": {
+        "id": "Test_id",
+        "integrationKey": "TEST_KEY"
+      },
+      "version": "Test_version",
+      "active": true,
+      "integrationKey": "TEST_KEY"
+    },
+    "name": "Test_name",
+    "supercategories": [
+      {
+        "code": "Test_code",
+        "name": "Test_name",
+        "localizedAttributes": [
+          {
+            "language": "en",
+            "name": "Test_name"
+          }
+        ],
+        "integrationKey": "TEST_KEY"
+      }
+    ],
+    "localizedAttributes": [
+      {
+        "language": "en",
+        "name": "Test_name"
+      }
+    ],
+    "integrationKey": "TEST_KEY"
+  }
