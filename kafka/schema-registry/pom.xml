@@ -1,7 +1,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sqli.composablehub</groupId>
-  <artifactId>avro-schema-refistry</artifactId>
+  <artifactId>avro-schema-registry</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <dependencies>

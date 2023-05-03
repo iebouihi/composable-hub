@@ -13,26 +13,26 @@ import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
-public class Supercategories extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1010205002592488893L;
+public class Category extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = -7847110485857717222L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Supercategories\",\"namespace\":\"com.sqli.composablehub.sap.models\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Category\",\"namespace\":\"com.sqli.composablehub.sap.models\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
 
-  private static final BinaryMessageEncoder<Supercategories> ENCODER =
+  private static final BinaryMessageEncoder<Category> ENCODER =
       new BinaryMessageEncoder<>(MODEL$, SCHEMA$);
 
-  private static final BinaryMessageDecoder<Supercategories> DECODER =
+  private static final BinaryMessageDecoder<Category> DECODER =
       new BinaryMessageDecoder<>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageEncoder instance used by this class.
    * @return the message encoder used by this class
    */
-  public static BinaryMessageEncoder<Supercategories> getEncoder() {
+  public static BinaryMessageEncoder<Category> getEncoder() {
     return ENCODER;
   }
 
@@ -40,7 +40,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
    * Return the BinaryMessageDecoder instance used by this class.
    * @return the message decoder used by this class
    */
-  public static BinaryMessageDecoder<Supercategories> getDecoder() {
+  public static BinaryMessageDecoder<Category> getDecoder() {
     return DECODER;
   }
 
@@ -49,12 +49,12 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
    * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
-  public static BinaryMessageDecoder<Supercategories> createDecoder(SchemaStore resolver) {
+  public static BinaryMessageDecoder<Category> createDecoder(SchemaStore resolver) {
     return new BinaryMessageDecoder<>(MODEL$, SCHEMA$, resolver);
   }
 
   /**
-   * Serializes this Supercategories to a ByteBuffer.
+   * Serializes this Category to a ByteBuffer.
    * @return a buffer holding the serialized data for this instance
    * @throws java.io.IOException if this instance could not be serialized
    */
@@ -63,12 +63,12 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
-   * Deserializes a Supercategories from a ByteBuffer.
+   * Deserializes a Category from a ByteBuffer.
    * @param b a byte buffer holding serialized data for an instance of this class
-   * @return a Supercategories instance decoded from the given buffer
+   * @return a Category instance decoded from the given buffer
    * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
    */
-  public static Supercategories fromByteBuffer(
+  public static Category fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
@@ -81,14 +81,14 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public Supercategories() {}
+  public Category() {}
 
   /**
    * All-args constructor.
    * @param code The new value for code
    * @param name The new value for name
    */
-  public Supercategories(java.lang.CharSequence code, java.lang.CharSequence name) {
+  public Category(java.lang.CharSequence code, java.lang.CharSequence name) {
     this.code = code;
     this.name = name;
   }
@@ -155,45 +155,45 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
-   * Creates a new Supercategories RecordBuilder.
-   * @return A new Supercategories RecordBuilder
+   * Creates a new Category RecordBuilder.
+   * @return A new Category RecordBuilder
    */
-  public static com.sqli.composablehub.sap.models.Supercategories.Builder newBuilder() {
-    return new com.sqli.composablehub.sap.models.Supercategories.Builder();
+  public static com.sqli.composablehub.sap.models.Category.Builder newBuilder() {
+    return new com.sqli.composablehub.sap.models.Category.Builder();
   }
 
   /**
-   * Creates a new Supercategories RecordBuilder by copying an existing Builder.
+   * Creates a new Category RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new Supercategories RecordBuilder
+   * @return A new Category RecordBuilder
    */
-  public static com.sqli.composablehub.sap.models.Supercategories.Builder newBuilder(com.sqli.composablehub.sap.models.Supercategories.Builder other) {
+  public static com.sqli.composablehub.sap.models.Category.Builder newBuilder(com.sqli.composablehub.sap.models.Category.Builder other) {
     if (other == null) {
-      return new com.sqli.composablehub.sap.models.Supercategories.Builder();
+      return new com.sqli.composablehub.sap.models.Category.Builder();
     } else {
-      return new com.sqli.composablehub.sap.models.Supercategories.Builder(other);
+      return new com.sqli.composablehub.sap.models.Category.Builder(other);
     }
   }
 
   /**
-   * Creates a new Supercategories RecordBuilder by copying an existing Supercategories instance.
+   * Creates a new Category RecordBuilder by copying an existing Category instance.
    * @param other The existing instance to copy.
-   * @return A new Supercategories RecordBuilder
+   * @return A new Category RecordBuilder
    */
-  public static com.sqli.composablehub.sap.models.Supercategories.Builder newBuilder(com.sqli.composablehub.sap.models.Supercategories other) {
+  public static com.sqli.composablehub.sap.models.Category.Builder newBuilder(com.sqli.composablehub.sap.models.Category other) {
     if (other == null) {
-      return new com.sqli.composablehub.sap.models.Supercategories.Builder();
+      return new com.sqli.composablehub.sap.models.Category.Builder();
     } else {
-      return new com.sqli.composablehub.sap.models.Supercategories.Builder(other);
+      return new com.sqli.composablehub.sap.models.Category.Builder(other);
     }
   }
 
   /**
-   * RecordBuilder for Supercategories instances.
+   * RecordBuilder for Category instances.
    */
   @org.apache.avro.specific.AvroGenerated
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Supercategories>
-    implements org.apache.avro.data.RecordBuilder<Supercategories> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Category>
+    implements org.apache.avro.data.RecordBuilder<Category> {
 
     private java.lang.CharSequence code;
     private java.lang.CharSequence name;
@@ -207,7 +207,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.sqli.composablehub.sap.models.Supercategories.Builder other) {
+    private Builder(com.sqli.composablehub.sap.models.Category.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.code)) {
         this.code = data().deepCopy(fields()[0].schema(), other.code);
@@ -220,10 +220,10 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
-     * Creates a Builder by copying an existing Supercategories instance
+     * Creates a Builder by copying an existing Category instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.sqli.composablehub.sap.models.Supercategories other) {
+    private Builder(com.sqli.composablehub.sap.models.Category other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.code)) {
         this.code = data().deepCopy(fields()[0].schema(), other.code);
@@ -249,7 +249,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'code'.
       * @return This builder.
       */
-    public com.sqli.composablehub.sap.models.Supercategories.Builder setCode(java.lang.CharSequence value) {
+    public com.sqli.composablehub.sap.models.Category.Builder setCode(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.code = value;
       fieldSetFlags()[0] = true;
@@ -269,7 +269,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'code' field.
       * @return This builder.
       */
-    public com.sqli.composablehub.sap.models.Supercategories.Builder clearCode() {
+    public com.sqli.composablehub.sap.models.Category.Builder clearCode() {
       code = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -289,7 +289,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public com.sqli.composablehub.sap.models.Supercategories.Builder setName(java.lang.CharSequence value) {
+    public com.sqli.composablehub.sap.models.Category.Builder setName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.name = value;
       fieldSetFlags()[1] = true;
@@ -309,7 +309,7 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public com.sqli.composablehub.sap.models.Supercategories.Builder clearName() {
+    public com.sqli.composablehub.sap.models.Category.Builder clearName() {
       name = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -317,9 +317,9 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
 
     @Override
     @SuppressWarnings("unchecked")
-    public Supercategories build() {
+    public Category build() {
       try {
-        Supercategories record = new Supercategories();
+        Category record = new Category();
         record.code = fieldSetFlags()[0] ? this.code : (java.lang.CharSequence) defaultValue(fields()[0]);
         record.name = fieldSetFlags()[1] ? this.name : (java.lang.CharSequence) defaultValue(fields()[1]);
         return record;
@@ -332,8 +332,8 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumWriter<Supercategories>
-    WRITER$ = (org.apache.avro.io.DatumWriter<Supercategories>)MODEL$.createDatumWriter(SCHEMA$);
+  private static final org.apache.avro.io.DatumWriter<Category>
+    WRITER$ = (org.apache.avro.io.DatumWriter<Category>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
     throws java.io.IOException {
@@ -341,8 +341,8 @@ public class Supercategories extends org.apache.avro.specific.SpecificRecordBase
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumReader<Supercategories>
-    READER$ = (org.apache.avro.io.DatumReader<Supercategories>)MODEL$.createDatumReader(SCHEMA$);
+  private static final org.apache.avro.io.DatumReader<Category>
+    READER$ = (org.apache.avro.io.DatumReader<Category>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
     throws java.io.IOException {

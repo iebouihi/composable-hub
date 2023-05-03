@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4027306901658926644L;
+  private static final long serialVersionUID = 1640045189823599697L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SAPProductRaw\",\"namespace\":\"com.sqli.composablehub.sap.models\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"catalog\",\"type\":\"string\"},{\"name\":\"integration_key\",\"type\":\"string\"},{\"name\":\"catalog_version\",\"type\":\"string\"},{\"name\":\"supercategories\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Supercategories\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"}]}}},{\"name\":\"localizedAttributes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LocalizedAttributes\",\"fields\":[{\"name\":\"language\",\"type\":\"string\"},{\"name\":\"name\",\"type\":[\"string\",\"null\"]}]}}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SAPProductRaw\",\"namespace\":\"com.sqli.composablehub.sap.models\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"catalog\",\"type\":\"string\"},{\"name\":\"integration_key\",\"type\":\"string\"},{\"name\":\"catalog_version\",\"type\":\"string\"},{\"name\":\"supercategories\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Category\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"}]}}},{\"name\":\"localizedAttributes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LocalizedAttributes\",\"fields\":[{\"name\":\"language\",\"type\":\"string\"},{\"name\":\"name\",\"type\":[\"string\",\"null\"]}]}}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -78,7 +78,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
   private java.lang.CharSequence catalog;
   private java.lang.CharSequence integration_key;
   private java.lang.CharSequence catalog_version;
-  private java.util.List<com.sqli.composablehub.sap.models.Supercategories> supercategories;
+  private java.util.List<com.sqli.composablehub.sap.models.Category> supercategories;
   private java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes> localizedAttributes;
 
   /**
@@ -98,7 +98,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
    * @param supercategories The new value for supercategories
    * @param localizedAttributes The new value for localizedAttributes
    */
-  public SAPProductRaw(java.lang.CharSequence code, java.lang.CharSequence name, java.lang.CharSequence catalog, java.lang.CharSequence integration_key, java.lang.CharSequence catalog_version, java.util.List<com.sqli.composablehub.sap.models.Supercategories> supercategories, java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes> localizedAttributes) {
+  public SAPProductRaw(java.lang.CharSequence code, java.lang.CharSequence name, java.lang.CharSequence catalog, java.lang.CharSequence integration_key, java.lang.CharSequence catalog_version, java.util.List<com.sqli.composablehub.sap.models.Category> supercategories, java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes> localizedAttributes) {
     this.code = code;
     this.name = name;
     this.catalog = catalog;
@@ -139,7 +139,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
     case 2: catalog = (java.lang.CharSequence)value$; break;
     case 3: integration_key = (java.lang.CharSequence)value$; break;
     case 4: catalog_version = (java.lang.CharSequence)value$; break;
-    case 5: supercategories = (java.util.List<com.sqli.composablehub.sap.models.Supercategories>)value$; break;
+    case 5: supercategories = (java.util.List<com.sqli.composablehub.sap.models.Category>)value$; break;
     case 6: localizedAttributes = (java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes>)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
@@ -234,7 +234,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
    * Gets the value of the 'supercategories' field.
    * @return The value of the 'supercategories' field.
    */
-  public java.util.List<com.sqli.composablehub.sap.models.Supercategories> getSupercategories() {
+  public java.util.List<com.sqli.composablehub.sap.models.Category> getSupercategories() {
     return supercategories;
   }
 
@@ -243,7 +243,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
    * Sets the value of the 'supercategories' field.
    * @param value the value to set.
    */
-  public void setSupercategories(java.util.List<com.sqli.composablehub.sap.models.Supercategories> value) {
+  public void setSupercategories(java.util.List<com.sqli.composablehub.sap.models.Category> value) {
     this.supercategories = value;
   }
 
@@ -310,7 +310,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.CharSequence catalog;
     private java.lang.CharSequence integration_key;
     private java.lang.CharSequence catalog_version;
-    private java.util.List<com.sqli.composablehub.sap.models.Supercategories> supercategories;
+    private java.util.List<com.sqli.composablehub.sap.models.Category> supercategories;
     private java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes> localizedAttributes;
 
     /** Creates a new Builder */
@@ -594,7 +594,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
       * Gets the value of the 'supercategories' field.
       * @return The value.
       */
-    public java.util.List<com.sqli.composablehub.sap.models.Supercategories> getSupercategories() {
+    public java.util.List<com.sqli.composablehub.sap.models.Category> getSupercategories() {
       return supercategories;
     }
 
@@ -604,7 +604,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'supercategories'.
       * @return This builder.
       */
-    public com.sqli.composablehub.sap.models.SAPProductRaw.Builder setSupercategories(java.util.List<com.sqli.composablehub.sap.models.Supercategories> value) {
+    public com.sqli.composablehub.sap.models.SAPProductRaw.Builder setSupercategories(java.util.List<com.sqli.composablehub.sap.models.Category> value) {
       validate(fields()[5], value);
       this.supercategories = value;
       fieldSetFlags()[5] = true;
@@ -680,7 +680,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
         record.catalog = fieldSetFlags()[2] ? this.catalog : (java.lang.CharSequence) defaultValue(fields()[2]);
         record.integration_key = fieldSetFlags()[3] ? this.integration_key : (java.lang.CharSequence) defaultValue(fields()[3]);
         record.catalog_version = fieldSetFlags()[4] ? this.catalog_version : (java.lang.CharSequence) defaultValue(fields()[4]);
-        record.supercategories = fieldSetFlags()[5] ? this.supercategories : (java.util.List<com.sqli.composablehub.sap.models.Supercategories>) defaultValue(fields()[5]);
+        record.supercategories = fieldSetFlags()[5] ? this.supercategories : (java.util.List<com.sqli.composablehub.sap.models.Category>) defaultValue(fields()[5]);
         record.localizedAttributes = fieldSetFlags()[6] ? this.localizedAttributes : (java.util.List<com.sqli.composablehub.sap.models.LocalizedAttributes>) defaultValue(fields()[6]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
@@ -728,7 +728,7 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
     out.writeArrayStart();
     out.setItemCount(size0);
     long actualSize0 = 0;
-    for (com.sqli.composablehub.sap.models.Supercategories e0: this.supercategories) {
+    for (com.sqli.composablehub.sap.models.Category e0: this.supercategories) {
       actualSize0++;
       out.startItem();
       e0.customEncode(out);
@@ -768,17 +768,17 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
       this.catalog_version = in.readString(this.catalog_version instanceof Utf8 ? (Utf8)this.catalog_version : null);
 
       long size0 = in.readArrayStart();
-      java.util.List<com.sqli.composablehub.sap.models.Supercategories> a0 = this.supercategories;
+      java.util.List<com.sqli.composablehub.sap.models.Category> a0 = this.supercategories;
       if (a0 == null) {
-        a0 = new SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories>((int)size0, SCHEMA$.getField("supercategories").schema());
+        a0 = new SpecificData.Array<com.sqli.composablehub.sap.models.Category>((int)size0, SCHEMA$.getField("supercategories").schema());
         this.supercategories = a0;
       } else a0.clear();
-      SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories>)a0 : null);
+      SpecificData.Array<com.sqli.composablehub.sap.models.Category> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.sqli.composablehub.sap.models.Category>)a0 : null);
       for ( ; 0 < size0; size0 = in.arrayNext()) {
         for ( ; size0 != 0; size0--) {
-          com.sqli.composablehub.sap.models.Supercategories e0 = (ga0 != null ? ga0.peek() : null);
+          com.sqli.composablehub.sap.models.Category e0 = (ga0 != null ? ga0.peek() : null);
           if (e0 == null) {
-            e0 = new com.sqli.composablehub.sap.models.Supercategories();
+            e0 = new com.sqli.composablehub.sap.models.Category();
           }
           e0.customDecode(in);
           a0.add(e0);
@@ -828,17 +828,17 @@ public class SAPProductRaw extends org.apache.avro.specific.SpecificRecordBase i
 
         case 5:
           long size0 = in.readArrayStart();
-          java.util.List<com.sqli.composablehub.sap.models.Supercategories> a0 = this.supercategories;
+          java.util.List<com.sqli.composablehub.sap.models.Category> a0 = this.supercategories;
           if (a0 == null) {
-            a0 = new SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories>((int)size0, SCHEMA$.getField("supercategories").schema());
+            a0 = new SpecificData.Array<com.sqli.composablehub.sap.models.Category>((int)size0, SCHEMA$.getField("supercategories").schema());
             this.supercategories = a0;
           } else a0.clear();
-          SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.sqli.composablehub.sap.models.Supercategories>)a0 : null);
+          SpecificData.Array<com.sqli.composablehub.sap.models.Category> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.sqli.composablehub.sap.models.Category>)a0 : null);
           for ( ; 0 < size0; size0 = in.arrayNext()) {
             for ( ; size0 != 0; size0--) {
-              com.sqli.composablehub.sap.models.Supercategories e0 = (ga0 != null ? ga0.peek() : null);
+              com.sqli.composablehub.sap.models.Category e0 = (ga0 != null ? ga0.peek() : null);
               if (e0 == null) {
-                e0 = new com.sqli.composablehub.sap.models.Supercategories();
+                e0 = new com.sqli.composablehub.sap.models.Category();
               }
               e0.customDecode(in);
               a0.add(e0);

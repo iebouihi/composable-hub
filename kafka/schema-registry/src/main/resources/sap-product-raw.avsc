@@ -31,7 +31,7 @@
         "items": {
           "type": "record",
           "namespace": "com.sqli.composablehub.sap.models",
-          "name": "Supercategories",
+          "name": "Category",
           "fields": [
             {
               "name": "code",
