@@ -41,6 +41,8 @@
                 <version>3.11.0</version>
                 <configuration>
                     <sourceDirectory>${project.basedir}/src/main/generated</sourceDirectory>
+                    <source>7</source>
+                    <target>7</target>
                 </configuration>
             </plugin>
         </plugins>
