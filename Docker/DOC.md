@@ -29,7 +29,7 @@ Copy the .env.sample file to a .env file and make sure all the variables are cor
 cp .env.sample .env
 ```
 
-Run the Kafka cluster
+Make sure the port 8080 is free and no containers with names, zookeeper, kafka, schema-registry, kafka-connect and conduktor exist, then run the Kafka cluster.
 
 ```
 docker-compose up -d
