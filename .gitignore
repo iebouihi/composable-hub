@@ -3,3 +3,6 @@
 .settings/
 target/
 .vscode/
+Docker/.env
+.DS_Store
+
