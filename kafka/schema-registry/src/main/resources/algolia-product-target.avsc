@@ -1,0 +1,31 @@
+{
+    "namespace": "com.sqli.composablehub.algolia.models",
+    "type": "record",
+    "name": "ArticleTarget",
+    "fields": [
+        {
+            "type": "string",
+            "name": "objectID",
+            "doc": "Mapped to Catalog_version + Product ID. This is the only required attribute for algolia"
+        },
+        {
+            "type": "string",
+            "name": "code"
+        },
+        {
+            "type": "string",
+            "name": "catalog_version"
+        },
+        {
+            "name": "integration_key",
+            "type": "string"
+        },
+        {
+            "name": "supercategories",
+            "type": {
+                "type": "array",
+                "items": "string"
+            }
+        }
+    ]
+}
