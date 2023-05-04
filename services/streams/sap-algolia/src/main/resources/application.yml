@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sap-algolia-stream
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka-stream-config:
+  bootstrap-servers: localhost:9092
+  schema-registry-url: http://localhost:8081
+  application-id: sap-algolia-stream
+  input-topic: sap-raw
+  output-topic: algolia-target
+
+
