@@ -1,0 +1,70 @@
+{
+  "namespace": "com.sqli.composablehub.sap.models",
+  "type": "record",
+  "name": "SAPProductRaw",
+  "fields": [
+    {
+      "name": "code",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "catalog",
+      "type": "string"
+    },
+    {
+      "name": "integration_key",
+      "type": "string"
+    },
+    {
+      "name": "catalog_version",
+      "type": "string"
+    },
+    
+    {
+      "name": "supercategories",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "namespace": "com.sqli.composablehub.sap.models",
+          "name": "Category",
+          "fields": [
+            {
+              "name": "code",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "localizedAttributes",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "namespace": "com.sqli.composablehub.sap.models",
+          "name": "LocalizedAttributes",
+          "fields": [
+            {
+              "name": "language",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": ["string","null"]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
