@@ -1,0 +1,13 @@
+kafka-config:
+  bootstrap-servers: localhost:9092
+  schema-registry-url-key: schema.registry.url
+  schema-registry-url: http://localhost:8081
+  topic-name: sap-raw
+  num-of-partitions: 3
+  replication-factor: 2
+
+retry-config:
+  initial-interval-ms: 1000
+  max-interval-ms: 10000
+  multiplier: 2.0
+  maxAttempts: 3
