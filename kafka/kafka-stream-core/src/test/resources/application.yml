@@ -1,0 +1,8 @@
+kafka-stream-config:
+  bootstrap-servers: localhost:9092
+  schema-registry-url: http://localhost:8081
+  application-id: stream-core
+  input-topic: input-topic
+  output-topic: output-topic
+
+

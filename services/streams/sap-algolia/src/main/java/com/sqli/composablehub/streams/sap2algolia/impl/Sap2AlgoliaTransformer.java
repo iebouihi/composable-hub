@@ -1,9 +1,9 @@
-package com.sqli.composablehub.streams.sap2algolia.transformation.impl;
+package com.sqli.composablehub.streams.sap2algolia.impl;
 
 import com.sqli.composablehub.algolia.models.ArticleTarget;
 import com.sqli.composablehub.sap.models.Category;
 import com.sqli.composablehub.sap.models.SAPProductRaw;
-import com.sqli.composablehub.streams.sap2algolia.transformation.StreamTransformer;
+import com.sqli.composablehub.streamscore.transformation.StreamTransformer;
 
 import java.util.ArrayList;
 import java.util.List;

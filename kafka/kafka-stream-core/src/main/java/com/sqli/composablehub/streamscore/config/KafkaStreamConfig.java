@@ -1,9 +1,8 @@
-package com.sqli.composablehub.streams.sap2algolia.config;
+package com.sqli.composablehub.streamscore.config;
 
 import com.sqli.composablehub.algolia.models.ArticleTarget;
 import com.sqli.composablehub.sap.models.SAPProductRaw;
-import com.sqli.composablehub.streams.sap2algolia.transformation.impl.Sap2AlgoliaTransformer;
-import com.sqli.composablehub.streams.sap2algolia.transformation.StreamTransformer;
+import com.sqli.composablehub.streamscore.transformation.StreamTransformer;
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
 import org.apache.kafka.common.serialization.Serde;
@@ -36,20 +35,5 @@ public class KafkaStreamConfig {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, kafkaStreamConfigData.getApplicationId());
         props.put(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, kafkaStreamConfigData.getSchemaRegistryUrl());
         return new KafkaStreamsConfiguration(props);
-    }
-
-    @Bean
-    StreamTransformer streamConverter() {
-        return new Sap2AlgoliaTransformer();
-    }
-
-    @Bean
-    Serde sourceSerde() {
-        return new SpecificAvroSerde<SAPProductRaw>();
-    }
-
-    @Bean
-    Serde targetSerde() {
-        return new  SpecificAvroSerde<ArticleTarget>();
     }
 }

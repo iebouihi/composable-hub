@@ -1,4 +1,4 @@
-package com.sqli.composablehub.streams.sap2algolia.config;
+package com.sqli.composablehub.streamscore.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

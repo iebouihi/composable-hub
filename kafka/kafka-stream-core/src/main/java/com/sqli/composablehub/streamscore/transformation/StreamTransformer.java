@@ -1,4 +1,4 @@
-package com.sqli.composablehub.streams.sap2algolia.transformation;
+package com.sqli.composablehub.streamscore.transformation;
 
 import org.apache.avro.specific.SpecificRecordBase;
 

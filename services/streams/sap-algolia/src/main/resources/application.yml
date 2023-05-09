@@ -4,7 +4,7 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
 
-kafka-stream-config:
+sap-to-algolia-stream-config:
   bootstrap-servers: localhost:9092
   schema-registry-url: http://localhost:8081
   application-id: sap-algolia-stream
