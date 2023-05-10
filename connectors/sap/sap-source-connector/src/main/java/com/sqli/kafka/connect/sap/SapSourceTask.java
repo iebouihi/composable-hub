@@ -102,7 +102,7 @@ public class SapSourceTask extends SourceTask {
   private SourceRecord buildSourceRecord(Map<String, Object> sapProduct, String lastRead, Long apiOffset) {
     Map<String, Object> sourceOffset = buildSourceOffset(lastRead, apiOffset);
     Map<String, Object> sourcePartition = buildSourcePartition();
-    return new SourceRecord(sourcePartition, sourceOffset, topic, null, sapProduct.get("code").toString(), null, new Gson().toJson(sapProduct));
+    return new SourceRecord(sourcePartition, sourceOffset, topic, null, sapProduct.get("code"), null, sapProduct);
   }
 
   private long calculateApiOffset(long currentLoopOffset, String newFromDate, String oldFromDate) {
