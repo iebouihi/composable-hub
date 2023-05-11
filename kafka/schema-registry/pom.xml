@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sqli.composablehub</groupId>
     <artifactId>avro-schema-registry</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <!-- Avro dependencies -->
